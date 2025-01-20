@@ -1,5 +1,6 @@
 package String;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 /*
@@ -59,5 +60,32 @@ public class Anagram_String {
         }
         return true;
     }
+    public boolean isAnagram2(String s, String t) {
+        if (s.length() != t.length()) {
+            return false;
+        }
+        char[] arr1 =s.toCharArray();
+        char[] arr2 =t.toCharArray();
+//        int[] count = new int[26];
+//        for (int i = 0; i < arr1.length; i++) {
+//            count[arr1[i] - 'a']++;
+//            count[arr2[i] - 'a']--;
+//        }
+//        for (int i = 0; i < 26; i++) {
+//            if (count[i] != 0) {
+//                return false;
+//            }
+//        }
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+//        for (int i = 0; i < arr1.length; i++) {
+//            if (arr1[i] != arr2[i]) {
+//                return false;
+//            }
+//        }
+//        return true;
+        return Arrays.equals(arr1,arr2);
+    }
+
 
 }

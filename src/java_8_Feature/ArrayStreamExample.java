@@ -49,5 +49,8 @@ public class ArrayStreamExample {
                 .min(Integer::compare)
                 .orElse(null);
         System.out.println("Minimum number: " + min);
+
+
     }
+
 }
