@@ -23,7 +23,8 @@ public class Balanced_parentheses {
         String s1 = "[{()}]";
 
         System.out.println(isValid(s));
-        System.out.println(isValid1(s1));   }
+        System.out.println(isValid1(s1));
+    }
     public static boolean isValid1(String s) {
         Stack<Character> stack = new Stack<>();
         for (int i = 0; i < s.length(); i++) {
