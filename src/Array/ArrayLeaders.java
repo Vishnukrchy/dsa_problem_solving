@@ -5,6 +5,7 @@ import ProblemSolvingChanlange.User;
 import java.util.ArrayList;
 
 /*
+@Author : Vishnu
 Problem Understanding:
 You are given an array of integers. Your task is to find the leaders in the array. An element is a leader if it is greater than all the elements to its right side in the array.
 Input: arr = [16, 17, 4, 3, 5, 2]
