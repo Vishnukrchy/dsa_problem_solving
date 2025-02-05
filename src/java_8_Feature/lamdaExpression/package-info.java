@@ -2,7 +2,7 @@ package java_8_Feature.lamdaExpression;
 
 /**
  * @Author: Vishnu Kumar
- * @Date: 2022-07-30 10:41
+ * @Date: 2025-01-30 10:41
  * @Description: About lamda expression
  *
  * What is lamda expression?
