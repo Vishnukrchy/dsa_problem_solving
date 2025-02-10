@@ -62,4 +62,5 @@ public class RemoveDuplicatesFromArr {
         User.printArray(arr);
         return Arrays.copyOfRange(arr, 0, j);
     }
+
 }
