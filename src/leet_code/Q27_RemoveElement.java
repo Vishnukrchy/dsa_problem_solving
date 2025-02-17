@@ -17,6 +17,7 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 public class Q27_RemoveElement {
     public static void main(String[] args) {
 
+
     }
     public int removeElement(int[] nums, int val) {
         int n=nums.length;
