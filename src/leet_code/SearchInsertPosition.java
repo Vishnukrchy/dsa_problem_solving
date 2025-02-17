@@ -1,4 +1,7 @@
 package leet_code;
+
+import java.rmi.dgc.VMID;
+
 /*
 @Author: Vishnu
 @Date: 2022-07-30 10:41
@@ -20,8 +23,17 @@ public class SearchInsertPosition {
         int low = 0;
         int high = nums.length - 1;
         while(low<=high){
+            int mid=low+(high-low)/2;
+            if(nums[mid]==target){
+                return mid;
+            }else if(nums[mid]>target){
+                high=mid-1;
+            }else{
+                low=mid+1;
+            }
 
         }
+        return -1;
     }
     // By using Binary Search
     public  static int searchInsert(int[] nums, int target) {
