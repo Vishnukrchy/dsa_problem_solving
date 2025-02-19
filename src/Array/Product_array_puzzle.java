@@ -43,6 +43,7 @@ public class Product_array_puzzle {
                 }
                 product = product * nums[j];
             }
+
             resultArr[i] = product;
 
         }
