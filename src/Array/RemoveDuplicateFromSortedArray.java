@@ -2,6 +2,8 @@ package Array;
 
 import ProblemSolvingChanlange.User;
 
+import java.util.HashSet;
+
 /*
 @Author: Vishnu kumar
 @Date: 2022-07-30 10:41
@@ -11,10 +13,12 @@ Given an integer array nums sorted in non-decreasing order, remove the duplicate
  */
 public class RemoveDuplicateFromSortedArray {
     public static void main(String[] args) {
-        int arr[] = User.userInputArray();
+       // int arr[] = User.userInputArray();
+        int arr[] = {0,0,1,1,1,2,2,3,3,4};
         RemoveDuplicateFromSortedArray obj = new RemoveDuplicateFromSortedArray();
         int result = obj.removeDuplicates(arr);
         System.out.println("The length of the new array is: " + result);
+        System.out.println("The new array is: "+removeDuplicates3(arr));
 
     }
 
@@ -41,5 +45,26 @@ public class RemoveDuplicateFromSortedArray {
             }
         }
         return count;
+    }
+    public static int removeDuplicates3(int[] nums) {
+        int n = nums.length;
+        HashSet<Integer> set=new HashSet<>();
+        for (int i:nums){
+            set.add(i);
+        }
+//        int count=0;
+//        for (int i=0;i<set.size();i++){
+//            nums[count++]=set.iterator().next();
+//
+//        }
+//        User.printArray(nums);
+//        return count;
+        // Copy back unique elements to the array
+        int i = 0;
+        for (int num : set) {
+            nums[i++] = num;
+        }
+        User.printArray(nums);
+        return set.size();
     }
 }
