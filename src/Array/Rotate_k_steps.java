@@ -17,8 +17,20 @@ public class Rotate_k_steps {
     public static void main(String[] args) {
         int arr[] = {1, 2, 3, 4, 5,6,7};
         int k = 3;
-        rotate(arr, k);
+       // rotate(arr, k);
+        rotate2(arr,k);
     }
+    //by using reverse
+    public static void rotate2(int[] nums, int k) {
+        int n=nums.length;
+revserse(nums,0,n-1);
+User.printArray(nums);
+revserse(nums,0,k-1);
+User.printArray(nums);
+revserse(nums,k,n-1);
+User.printArray(nums);
+    }
+
 
 
     // by taking new array
@@ -58,5 +70,22 @@ public class Rotate_k_steps {
             }
             nums[0] = temp;
         }
+    }
+    public static void revserse(int[] nums, int start, int end) {
+//        for (int i=start;i<end;i++){
+//            int temp=nums[i];
+//            nums[i]=nums[end];
+//            nums[end]=temp;
+//            end--;
+//        }
+        while(start<end){
+            int temp=nums[start];
+            nums[start]=nums[end];
+            nums[end]=temp;
+            start++;
+            end--;
+        }
+        //User.printArray(nums);
+
     }
 }
