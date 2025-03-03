@@ -1,8 +1,7 @@
 package Array;
-
-import javax.swing.*;
-
 /*
+@Author: vishnu Kumar
+@Date: 2025-03-01 10:41
 Problem Understanding:
 Given two strings s1 and s2, determine if s2 is a rotation of s1 using only one call to isSubstring (e.g., "waterbottle" is a rotation of "erbottlewat").
 
