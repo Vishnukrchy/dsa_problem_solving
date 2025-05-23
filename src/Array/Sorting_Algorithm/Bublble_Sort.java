@@ -7,7 +7,7 @@ Problem Understanding
 Bubble Sort is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order.
 Example:
 Input: 64, 34, 25, 12, 22, 11, 90
-Output: 11, 22, 25, 34, 64, 90
+Output: 11,12, 22, 25, 34, 64, 90
 Bubble Sorting Algorithm
   Time Complexity: O(n^2)
   Steps:
