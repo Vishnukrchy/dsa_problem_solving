@@ -1,6 +1,6 @@
 package Array;
 
-import ProblemSolvingChanlange.User;
+import ProblemSolving_Challenge.User;
 
 /*
 @Author: Vishnu Kumar

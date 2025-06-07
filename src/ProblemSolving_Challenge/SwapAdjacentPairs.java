@@ -1,4 +1,4 @@
-package ProblemSolvingChanlange;
+package ProblemSolving_Challenge;
 
 public class SwapAdjacentPairs {
     public static void main(String[] args) {

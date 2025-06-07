@@ -1,6 +1,6 @@
 package Array.Searching;
 
-import ProblemSolvingChanlange.User;
+import ProblemSolving_Challenge.User;
 
 
 

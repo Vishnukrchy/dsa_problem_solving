@@ -1,4 +1,4 @@
-package ProblemSolvingChanlange;
+package ProblemSolving_Challenge;
 
 import java.util.Scanner;
 import java.util.Set;

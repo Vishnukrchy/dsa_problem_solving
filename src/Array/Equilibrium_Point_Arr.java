@@ -1,10 +1,6 @@
 package Array;
 
-import ProblemSolvingChanlange.User;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import ProblemSolving_Challenge.User;
 
 /*
 Problem Understanding:

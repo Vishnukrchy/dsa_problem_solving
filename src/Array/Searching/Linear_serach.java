@@ -1,11 +1,6 @@
 package Array.Searching;
 
-import ProblemSolvingChanlange.User;
-
-import java.util.Arrays;
-import java.util.Scanner;
-
-import static java.lang.System.out;
+import ProblemSolving_Challenge.User;
 /*
 Linear Search
 -: Linear search is a simple searching algorithm that checks each element of the list one by one until a match is found or the whole list has been searched.

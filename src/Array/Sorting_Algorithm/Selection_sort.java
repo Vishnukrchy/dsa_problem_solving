@@ -25,7 +25,7 @@ Sorting Algorithm:
 
  */
 
-import ProblemSolvingChanlange.User;
+import ProblemSolving_Challenge.User;
 
 public class Selection_sort {
     public static void main(String[] args) {

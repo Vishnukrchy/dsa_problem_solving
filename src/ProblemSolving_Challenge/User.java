@@ -1,8 +1,6 @@
-package ProblemSolvingChanlange;
+package ProblemSolving_Challenge;
 
 import java.util.Scanner;
-
-import static java.lang.System.out;
 
 // check Odd Even
 public class User {

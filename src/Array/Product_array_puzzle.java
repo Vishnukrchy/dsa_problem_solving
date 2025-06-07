@@ -15,9 +15,7 @@ For i = 4, res[i] = 10 * 3 * 5 * 6 is 900.
 
  */
 
-import ProblemSolvingChanlange.User;
-
-import java.util.Scanner;
+import ProblemSolving_Challenge.User;
 
 public class Product_array_puzzle {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package Array.Sorting_Algorithm;
 
-import ProblemSolvingChanlange.User;
+import ProblemSolving_Challenge.User;
 
 /*
 Problem Understanding

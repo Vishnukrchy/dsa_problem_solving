@@ -1,4 +1,4 @@
-package ProblemSolvingChanlange;
+package ProblemSolving_Challenge;
 
 public class Q8Bigest_SecondBigest {
     public static void main(String[] args) {

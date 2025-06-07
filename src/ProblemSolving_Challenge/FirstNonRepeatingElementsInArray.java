@@ -1,9 +1,6 @@
 
-package ProblemSolvingChanlange;
+package ProblemSolving_Challenge;
 
-import java.util.Scanner;
-import java.util.Set;
-import java.util.TreeSet;
 public class FirstNonRepeatingElementsInArray {
     public static void main(String[] args) {
         System.out.println(" ==================== Fixed Array For Testing =================== ");

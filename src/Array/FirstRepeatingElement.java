@@ -1,8 +1,5 @@
 package Array;
 
-import ProblemSolvingChanlange.User;
-
-import java.beans.Introspector;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;

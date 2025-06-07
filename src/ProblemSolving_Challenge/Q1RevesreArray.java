@@ -1,4 +1,4 @@
-package ProblemSolvingChanlange;
+package ProblemSolving_Challenge;
 
 public class Q1RevesreArray {
     public static void main(String[] args) {
