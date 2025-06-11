@@ -17,7 +17,7 @@ public class Rotate_k_steps {
     public static void main(String[] args) {
         int arr[] = {1, 2, 3, 4, 5, 6, 7};
         int k = 3;
-        // rotate(arr, k);
+        //rotate(arr, k);
         rotate2(arr, k);
     }
 
