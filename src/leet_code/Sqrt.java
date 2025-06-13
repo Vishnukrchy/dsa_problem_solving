@@ -29,29 +29,7 @@ public class Sqrt {
 
     // Approach: 1 By using brute force
     public static int mySqrt(int x) {
-   /*
-   Approach:
-We check every number starting from 1 and square it. As soon as the square becomes greater than x, we stop and return the previous number (i.e., i - 1), since i * i > x.
 
-🔍 Dry Run Example:
-Let’s take x = 8
-We try:
-
-1 × 1 = 1 ✔️
-
-2 × 2 = 4 ✔️
-
-3 × 3 = 9 ❌ (greater than 8)
-
-→ So, we return 3 - 1 = 2
-
-🧠 Time and Space:
-Time Complexity: O(√x)
-
-Space Complexity: O(1)
-
-
-    */
         /*
           if (x < 2) return x; // Handle 0 and 1 directly
         for (int i = 1; i <= x / 2; i++) {
@@ -87,8 +65,68 @@ Space Complexity: O(1)
     // Approach: 2 By using Binary Search
 
         public static int sqrt(int x) {
-    /*
-    💡 Approach:
+
+            if (x == 0 || x == 1) return x;
+
+            int low = 0, high = x;
+            int ans = 0;
+
+            while (low <= high) {
+                int mid = low + (high - low) / 2;
+
+                // Use long to avoid overflow
+                long square = (long) mid * mid;
+
+                if (square == x)
+                    return mid;
+                else if (square < x) {
+                    ans = mid;
+                    low = mid + 1;
+                } else {
+                    high = mid - 1;
+                }
+            }
+            return ans;
+        }
+
+
+// Approach: 3 By using Newton's Method (also known as Heron's method)
+    public static int mySqrtNewton(int x) {
+        if (x < 2) return x; // Handle 0 and 1 directly
+
+        double guess = x / 2.0; // Initial guess
+        double epsilon = 1e-6; // Precision threshold
+
+        while (Math.abs(guess * guess - x) > epsilon) {
+            guess = (guess + x / guess) / 2.0; // Update guess
+        }
+        return (int) guess; // Return the integer part
+    }
+}
+
+   /*
+   Approach: 1 By using brute force
+We check every number starting from 1 and square it. As soon as the square becomes greater than x, we stop and return the previous number (i.e., i - 1), since i * i > x.
+
+🔍 Dry Run Example:
+Let’s take x = 8
+We try:
+
+1 × 1 = 1 ✔️
+
+2 × 2 = 4 ✔️
+
+3 × 3 = 9 ❌ (greater than 8)
+
+→ So, we return 3 - 1 = 2
+
+🧠 Time and Space:
+Time Complexity: O(√x)
+
+Space Complexity: O(1)
+
+ /*
+    💡 Approach: 2
 We use binary search between low = 0 and high = x:
 
 Calculate mid = (low + high) / 2
@@ -115,28 +153,6 @@ mid = 3 → 3*3 = 9 > 8 → high = 2
 End loop → return ans = 2
 
 ✅ Code (Java):
-     */
-            if (x == 0 || x == 1) return x;
 
-            int low = 0, high = x;
-            int ans = 0;
 
-            while (low <= high) {
-                int mid = low + (high - low) / 2;
-
-                // Use long to avoid overflow
-                long square = (long) mid * mid;
-
-                if (square == x)
-                    return mid;
-                else if (square < x) {
-                    ans = mid;
-                    low = mid + 1;
-                } else {
-                    high = mid - 1;
-                }
-            }
-            return ans;
-        }
-
-}
+    */
