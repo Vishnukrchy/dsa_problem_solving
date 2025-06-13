@@ -36,23 +36,23 @@ public class DeleteDuplicatesList {
         //
 
     }
-    public ListNode deleteDuplicates(ListNode head) {
-        if (head == null) return null; // If the list is empty, return null
-
-        ListNode current = head; // Start with the head of the list
-
-        while (current != null && current.next != null) {
-            if (current.val == current.next.val) {
-                // If the current node's value is equal to the next node's value,
-                // skip the next node by pointing current.next to current.next.next
-                current.next = current.next.next;
-            } else {
-                // Move to the next node
-                current = current.next;
-            }
-        }
-
-        return head; // Return the modified list
-    }
+//    public ListNode deleteDuplicates(ListNode head) {
+//        if (head == null) return null; // If the list is empty, return null
+//
+//        ListNode current = head; // Start with the head of the list
+//
+//        while (current != null && current.next != null) {
+//            if (current.val == current.next.val) {
+//                // If the current node's value is equal to the next node's value,
+//                // skip the next node by pointing current.next to current.next.next
+//                current.next = current.next.next;
+//            } else {
+//                // Move to the next node
+//                current = current.next;
+//            }
+//        }
+//
+//        return head; // Return the modified list
+//    }
 
 }
