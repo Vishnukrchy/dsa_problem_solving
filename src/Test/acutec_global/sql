@@ -1,0 +1,27 @@
+Q1 Write Query to find  2nd highest salary from Employee table
+Ans -:
+SELECT MAX(salary) AS SecondHighestSalary
+FROM Employee
+WHERE salary < (SELECT MAX(salary) FROM Employee);
+
+Q2 Write Query to find 2nd highest salary from Employee table using LIMIT
+Ans -:
+SELECT salary AS SecondHighestSalary
+FROM Employee
+ORDER BY salary DESC
+LIMIT 1 OFFSET 1;
+explanation -:
+limit 1 is used to limit the result to one row, and offset 1 skips the first row, effectively giving us the second highest salary.
+offset is used in sql to skip a specified number of rows before starting to return rows from the query result.
+Q3 Write Query to find 2nd highest salary from Employee table using DENSE_RANK
+Ans -:
+WITH RankedSalaries AS (
+    SELECT salary, DENSE_RANK() OVER (ORDER BY salary DESC) AS rank
+    FROM Employee
+)
+explanation -:
+SELECT salary AS SecondHighestSalary is used to select the salary column from the RankedSalaries CTE.
+WHERE rank = 2; is used to filter the results to only include the row with a rank of 2, which corresponds to the second highest salary.
+here we are using DENSE_RANK() to assign a rank to each salary in descending order, ensuring that if there are duplicate salaries, they receive the same rank.
+ and common table expression (CTE) is used to create a temporary result set that can be referenced within the main query.
+
