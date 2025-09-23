@@ -45,10 +45,16 @@ public class Q2_CheckUniqeElemnts {
     }
 
     public void checkUniqe(int arr[]) {
+        // Using a count array to track occurrences of each element
         int count[] = new int[arr.length];
 
         for (int i = 0; i < count.length; i++) {
             count[arr[i]]++;
+        }
+        for (int i = 0; i < count.length; i++) {
+            if (count[arr[i]] == 1) {
+                System.out.println("Unique Elements " + i);
+            }
         }
     }
 }
