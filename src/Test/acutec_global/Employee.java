@@ -62,6 +62,20 @@ class EmployeeTest {
                 .filter(e -> e.department.equals("Engineering"))
                 .count();
 
+        // compare  two employee list based on names
+        System.out.println("Count of employees in Engineering department: " + departmentCount); // Should print 2
+        ArrayList<Employee> engineeringEmployees = new ArrayList<>();
+        ArrayList<Employee> marketingEmployees = new ArrayList<>();
+        // Using stream API to comare two employee list based on names
+        employees.stream()
+                .filter(e -> e.department.equals("Engineering"))
+                .forEach(engineeringEmployees::add);
+        employees.stream()
+                .filter(e -> e.department.equals("Marketing"))
+                .forEach(marketingEmployees::add);
+        System.out.println("Engineering Employees: " + engineeringEmployees.size()); // Should print 2
+
+
 
     }
 }

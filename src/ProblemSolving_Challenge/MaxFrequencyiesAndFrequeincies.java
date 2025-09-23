@@ -48,5 +48,24 @@ public class MaxFrequencyiesAndFrequeincies {
         User.printArray(arr);
         System.out.println(targetValue+" Maximum "+max+" times");
     }
+    // using HashMap
+    public static void maxFrequencyUsingHashMap(int[] arr) {
+        java.util.HashMap<Integer, Integer> frequencyMap = new java.util.HashMap<>();
+        for (int num : arr) {
+            frequencyMap.put(num, frequencyMap.getOrDefault(num, 0) + 1);
+        }
+
+        int maxFrequency = 0;
+        int targetValue = 0;
+
+        for (java.util.Map.Entry<Integer, Integer> entry : frequencyMap.entrySet()) {
+            if (entry.getValue() > maxFrequency) {
+                maxFrequency = entry.getValue();
+                targetValue = entry.getKey();
+            }
+        }
+
+        System.out.println(targetValue + " Maximum " + maxFrequency + " times");
+    }
 
 }
