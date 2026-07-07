@@ -1,0 +1,210 @@
+
+# 🟢 ARRAY QUESTIONS (1–40)
+
+1. Find the largest element in an array
+
+2. Find the second largest element
+
+3. Find the smallest element
+
+4. Reverse an array
+
+5. Sort an array (without built-in)
+
+6. Remove duplicates from array
+
+7. Find missing number (1 to N)
+
+8. Move all zeros to end
+
+9. Count even and odd numbers
+
+10. Find frequency of elements
+
+11. Find intersection of two arrays
+
+12. Find union of two arrays
+
+13. Rotate array by K positions
+
+14. Find maximum subarray sum (Kadane’s)
+
+15. Find minimum subarray sum
+
+16. Two Sum problem
+
+17. Three Sum problem
+
+18. Find majority element (> n/2)
+
+19. Find duplicates in array
+
+20. Merge two sorted arrays
+
+21. Find subarray with given sum
+
+22. Find longest subarray with sum K
+
+23. Product of array except self
+
+24. Trapping rain water
+
+25. Container with most water
+
+26. Find peak element
+
+27. Search in rotated sorted array
+
+28. Find first and last position of element
+
+29. Find equilibrium index
+
+30. Find leaders in array
+
+31. Rearrange array (positive & negative alternate)
+
+32. Find missing and repeating number
+
+33. Longest consecutive sequence
+
+34. Maximum product subarray
+
+35. Count inversions in array
+
+36. Check if array is sorted and rotated
+
+37. Minimum number of jumps to reach end
+
+38. Chocolate distribution problem
+
+39. Stock buy and sell problem
+
+40. Subarray with maximum product
+
+---
+
+# 🔵 STRING QUESTIONS (41–75)
+
+41. Reverse a string
+
+42. Check palindrome string
+
+43. Check anagram
+
+44. Count vowels and consonants
+
+45. Remove duplicate characters
+
+46. Find first non-repeating character
+
+47. Find first repeating character
+
+48. Check if string contains only digits
+
+49. Convert string to integer (atoi)
+
+50. Count frequency of characters
+
+51. Find all substrings of a string
+
+52. Longest substring without repeating characters
+
+53. Longest palindromic substring
+
+54. String compression (aaabb → a3b2)
+
+55. Check if one string is rotation of another
+
+56. Remove spaces from string
+
+57. Reverse words in a sentence
+
+58. Capitalize first letter of each word
+
+59. Check valid parentheses
+
+60. Minimum insertions to make palindrome
+
+61. Group anagrams
+
+62. Find common characters between two strings
+
+63. Check if two strings are isomorphic
+
+64. Longest common prefix
+
+65. Implement strstr() (substring search)
+
+66. Count and say problem
+
+67. Zigzag conversion
+
+68. Roman to integer
+
+69. Integer to Roman
+
+70. Minimum window substring
+
+71. Remove all occurrences of a character
+
+72. Replace spaces with %20
+
+73. Check balanced brackets
+
+74. Find permutation of string
+
+75. Print all combinations of string
+
+---
+
+# 🟣 COLLECTION QUESTIONS (76–100)
+
+76. Count frequency using HashMap
+
+77. Find duplicates using HashSet
+
+78. Remove duplicates from List
+
+79. Sort list using Comparator
+
+80. Sort map by values
+
+81. Iterate HashMap in different ways
+
+82. Find top K frequent elements
+
+83. Group elements using HashMap
+
+84. Find common elements in two lists
+
+85. Convert List to Set
+
+86. Convert Set to List
+
+87. Find first non-repeating element using Map
+
+88. Implement LRU Cache
+
+89. Design custom HashMap
+
+90. Difference between HashMap and Hashtable (coding use case)
+
+91. Find intersection using Set
+
+92. Check if two lists are equal
+
+93. Merge two lists
+
+94. Find max/min in list
+
+95. Reverse a List
+
+96. Remove null values from collection
+
+97. Find duplicate objects in List
+
+98. Sort objects by multiple fields
+
+99. Thread-safe collection example
+
+100. Implement stack using collection
