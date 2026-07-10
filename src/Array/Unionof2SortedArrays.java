@@ -1,8 +1,12 @@
 package Array;
 
+import com.sun.source.tree.ArrayAccessTree;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.TreeSet;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /*
 @Author : Vishnu Kumar
@@ -16,7 +20,7 @@ import java.util.TreeSet;
  2. use hash set
  3. use stream
  */
-public interface Unionof2SortedArrays {
+public class Unionof2SortedArrays {
     static void main() {
         int [] arr1 = {1,2,3,4,5};
         int [] arr2 = {1,2,3,4,5};
@@ -89,6 +93,16 @@ public interface Unionof2SortedArrays {
         }
 
         return ans;
+    }
+    // using Stream API
+    static ArrayList<Integer> unionOf2SortedArrays3(int[] a, int[] b) {
+        //return Stream.of(a, b).flatMapToInt(Arrays::stream).distinct().boxed().collect(Collectors.toCollection(ArrayList::new));
+
+        java.util.ArrayList<Integer> result =Stream.of(a,b)
+                .flatMapToInt(Arrays::stream).distinct()// remove duplicates
+                .boxed()// convert to stream of Integer
+                .collect(Collectors.toCollection(ArrayList::new));// collect to ArrayList
+        return result;
     }
 
 
